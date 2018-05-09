@@ -1,12 +1,14 @@
 new Vue({
   el: "#vue-app",
   data: {
-    name: "Cory",
-    job: "Developer"
+    age: 28
   },
   methods: {
-    greet: function(time) {
-      return "Hello " + time
+    add: function(inc) {
+      this.age += inc
+    },
+    subtract: function(dec) {
+      this.age -= dec
     }
   }
 })

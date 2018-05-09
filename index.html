@@ -8,9 +8,10 @@
 </head>
 <body>
   <div id="vue-app">
-    <h1>{{greet('afternoon')}}</h1>
-    <p>Name: {{name}}</p>
-    <p>Job: {{job}}</p></div>
-    <script src="app.js"></script>
-  </body>
-  </html>
+    My age is {{age}}
+    <button v-on:click="add(1)">Add to age</button>
+    <button v-on:click="subtract(1)">Subtract from age</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
